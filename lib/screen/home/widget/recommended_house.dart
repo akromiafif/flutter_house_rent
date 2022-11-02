@@ -9,7 +9,8 @@ class RecommendedHouse extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
+      padding: const EdgeInsets.all(15),
       height: 340,
       child: ListView.separated(
           scrollDirection: Axis.horizontal,
