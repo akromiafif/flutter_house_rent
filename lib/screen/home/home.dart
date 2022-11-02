@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:house_rent/screen/home/widget/categories.dart';
 import 'package:house_rent/screen/home/widget/custom_app_bar.dart';
+import 'package:house_rent/screen/home/widget/recommended_house.dart';
 import 'package:house_rent/screen/home/widget/serach_input.dart';
 import 'package:house_rent/screen/home/widget/welcome.dart';
 
@@ -15,10 +16,11 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const <Widget>[
-            WelcomeText(),
-            SearchInput(),
-            Categories(),
+          children: <Widget>[
+            const WelcomeText(),
+            const SearchInput(),
+            const Categories(),
+            RecommendedHouse()
           ],
         ),
       ),
